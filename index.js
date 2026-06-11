@@ -56,6 +56,7 @@ function callGroq(messages, callback) {
 }
 
 app.post('/webhook', (req, res) => {
+ console.log('Webhook hit!', new Date());
   const userMessage = req.body.Body || '';
   const userPhone = req.body.From || 'unknown';
 
