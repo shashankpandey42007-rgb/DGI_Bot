@@ -4,7 +4,7 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-const GROQ_API_KEY = process.env.GROQ_API_KEY;
+const GROQ_API_KEY = process.env.GROQ_API_KEY || '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';
 
 const SYS = `You are DGI Bot — official WhatsApp AI for DGI Greater Noida (Dr. Gaur Hari Singhania Institute), Knowledge Park III, Greater Noida UP 201306.
 CONTACT: 0120-2323001 | dgi.ac.in | info@dgi.ac.in
